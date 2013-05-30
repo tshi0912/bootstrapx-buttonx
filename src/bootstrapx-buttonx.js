@@ -42,16 +42,6 @@
     }, 0)
   }
 
-  Buttonx.prototype.toggle = function () {
-    var $parent = this.$element.closest('[data-toggle="buttons-radio"]')
-
-    $parent && $parent
-      .find('.active')
-      .removeClass('active')
-
-    this.$element.toggleClass('active')
-  }
-
 
  /* BUTTONX PLUGIN DEFINITION
   * ======================== */
@@ -64,8 +54,7 @@
         , data = $this.data('buttonx')
         , options = typeof option == 'object' && option
       if (!data) $this.data('buttonx', (data = new Buttonx(this, options)))
-      if (option == 'toggle') data.toggle()
-      else if (option) data.setState(option)
+      data.setState(option)
     })
   }
 
@@ -83,15 +72,5 @@
     $.fn.buttonx = old
     return this
   }
-
-
- /* BUTTONX DATA-API
-  * =============== */
-
-  $(document).on('click.buttonx.data-api', '[data-toggle^=button]', function (e) {
-    var $btn = $(e.target)
-    if (!$btn.hasClass('btn')) $btn = $btn.closest('.btn')
-    $btn.buttonx('toggle')
-  })
 
 }(window.jQuery);
