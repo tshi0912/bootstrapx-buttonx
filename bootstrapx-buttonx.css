@@ -1,0 +1,23 @@
+.loader-16{
+  	background-image: url('loader-16.gif');
+  	background-repeat: no-repeat;
+  	width: 16px;
+  	height: 16px;
+	float: left;
+	margin-right: 10px;
+}
+.btn-danger .loader-16,
+.btn-warning .loader-16,
+.btn-info .loader-16,
+.btn-inverse .loader-16,
+.btn-primary .loader-16,
+.btn-success .loader-16{
+  	background-image: url('loader-16-white.gif');
+}
+.btn .loader-16{
+  	display: none;
+  	margin-top: 2px;
+}
+.btn.disabled .loader-16{
+  	display: block;
+}
