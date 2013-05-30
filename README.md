@@ -7,12 +7,12 @@ Usage
 ---------
 set loading state
 ```javascript
-$(this).buttonx('loading');
+$('button').buttonx('loading');
 ```
 
 reset to original
 ```javascript
-$(this).buttonx('reset');
+$('button').buttonx('reset');
 ```
 
 Demo
