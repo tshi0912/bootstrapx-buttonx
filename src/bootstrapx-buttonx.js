@@ -4,11 +4,7 @@
 * version: 1.0
 * ==========================================================
 *
-* Based on work from Twitter Bootstrap and
-* from Popover library https://github.com/tshi0912/bootstrapx-popoverx
-* from the great guys at Twitter.
-*
-* Untested with 2.1.0 but should worked with 2.0.x
+* Based on work from Twitter Bootstrap 
 *
 * ========================================================== */
 
